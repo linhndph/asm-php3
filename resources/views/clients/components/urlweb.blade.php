@@ -4,7 +4,7 @@
             <h2 class="breadcrumb-title">{{$pageName}}</h2>
             <ul>
                 <li>
-                    <a class="active" href="{{route('home')}}">Home</a>
+                    <a class="active" href="{{route('home')}}">Trang chủ</a>
                 </li>
                 <li>{{ $pageName }}</li>
             </ul>

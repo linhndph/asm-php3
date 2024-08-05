@@ -20,7 +20,7 @@
                         <div class="col-md-4 col-sm-6">
                             <div class="blog-details mb-30">
                                 <div class="blog-img">
-                                    <a href="{{ url('/chitiet', $item->id) }}"><img src="{{ asset($item->anh) }}"
+                                    <a href="{{ url('/chitiet', $item->id) }}"><img src="{{ asset('image/'.$item->anh) }}"
                                             alt=""></a>
                                     <div class="blog-quick-view">
                                         <a href="blog-details.html">

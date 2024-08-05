@@ -33,7 +33,7 @@
                                 <p class="details-pera">{{ $chiTiet->moTa }} </p>
                                 <blockquote>
                                     <p>
-                                        <img src="{{ asset($chiTiet->anh) }}" alt="">
+                                        <img src="{{ asset('image/'.$chiTiet->anh) }}" alt="">
                                     </p>
                                 </blockquote>
                                 <p>{{ $chiTiet->noiDung }}
@@ -149,7 +149,7 @@
                                    
                                         <div class="recent-img-text mb-20">
                                             <div class="recent-img">
-                                                <a href="{{ url('/chitiet', $item->id) }}"><img src="{{ asset($item->anh) }}" alt="" style="width: 80px"></a>
+                                                <a href="{{ url('/chitiet', $item->id) }}"><img src="{{ asset('image/'.$item->anh) }}" alt="" style="width: 80px"></a>
                                             </div>
                                             <div class="recent-text">
                                                 <h4>

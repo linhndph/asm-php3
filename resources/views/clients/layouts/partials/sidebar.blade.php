@@ -1,22 +1,23 @@
 <div class="menu-wrap">
     <nav class="menu">
         <div class="icon-list">
-            <h5>Currency:</h5>
-            <div class="btn-group">
-                <button type="button" class="btn btn-default">EURO</button>
-                <button type="button" class="btn btn-default">USD</button>
-            </div>
-            <h5 class="mt-2">Language</h5>
-            <a href="cart.html"><img src="assets/img/language/english.png" alt=""><span>English</span></a>
-            <a href="wishlist.html"><img src="assets/img/language/es.png" alt=""><span>Spanish</span></a>
-            <a href="checkout.html"><img src="assets/img/language/fr.png" alt=""><span>French</span></a>
-            <a href="login.html"><img src="assets/img/language/ge.png" alt=""><span>German</span></a>
-            <h5 class="mt-2">My Account:</h5>
-            <a href="cart.html"><i class="pe-7s-cart"></i><span>My Cart</span></a>
-            <a href="wishlist.html"><i class="pe-7s-like"></i><span>My Wishlist</span></a>
-            <a href="checkout.html"><i class="pe-7s-check"></i><span>Checkout</span></a>
-            <a href="login.html"><i class="pe-7s-next-2"></i><span>Sign In</span></a>
-            <a href="register.html"><i class="pe-7s-add-user"></i><span>Sign Up</span></a>
+            <h5 class="mt-2">Tài khoản của tôi:</h5>
+            @if (Auth::user())
+                @if (Auth::user()->type == 'admin')
+                    <label for="" style="color: #fff">Tên tài khoản:</label> <br>
+                    <label for="" style="color: #fff">Vào trang admin:</label>
+                    <a href="{{ route('admin.index') }}">Vào</a>
+                @endif
+                <span style="color: #fff">{{ Auth::user()->name }}</span>
+                <form action="{{ route('logout') }}" method="POST">
+                    @csrf
+                    <button type="submit" class="login-btn"><i class="pe-7s-check"></i> Đăng xuất</button>
+                </form>
+            @endif
+
+            <a href="{{ route('login') }}"><i class="pe-7s-next-2"></i><span>Đăng nhập</span></a>
+            <a href="{{ route('register') }}"><i class="pe-7s-add-user"></i><span>Đăng ký</span></a>
+
         </div>
     </nav>
     <button class="close-button" id="close-button">Close Menu</button>

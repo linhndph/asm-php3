@@ -5,19 +5,19 @@
 <!-- Mirrored from nahartheme.com/tf/jerin-preview/jerin/index-2.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 15 Jul 2024 16:09:30 GMT -->
 
 <head>
-    @include('clients.layouts.partials.head');
+    @include('clients.layouts.partials.head')
 </head>
 
 <body>
     <div class="canvas-wrapper">
         {{-- sidebar --}}
-        @include('clients.layouts.partials.sidebar');
+        @include('clients.layouts.partials.sidebar')
 
         <div class="content-wrap">
             <div class="content">
                 <!-- header start -->
                 <header class="header-area home-style-2">
-                    @include('clients.layouts.partials.header');
+                    @include('clients.layouts.partials.header')
                 </header>
                 <!-- header end -->
                 <!-- mobile-menu-area start -->
@@ -32,7 +32,7 @@
                 <!-- blog area end -->
                 <!-- footer area start -->
                 <footer class="footer-area">
-                    @include('clients.layouts.partials.footer');
+                    @include('clients.layouts.partials.footer')
                 </footer>
                 <!-- footer area end -->
                 <!-- quick view start -->
@@ -53,7 +53,7 @@
 
 </body>
 
-@include('clients.layouts.partials.linkjs');
+@include('clients.layouts.partials.linkjs')
 <!-- Mirrored from nahartheme.com/tf/jerin-preview/jerin/index-2.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 15 Jul 2024 16:09:57 GMT -->
 
 </html>

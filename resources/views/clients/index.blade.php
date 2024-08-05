@@ -10,7 +10,7 @@
                         @foreach ($tinNB as $item)
                             <div class="col-md-6 col-sm-6">
                                 <div class="banner-style-3-img mb-30">
-                                    <img src="{{ $item->anh }}" alt="">
+                                    <img src="{{ asset('image/'.$item->anh) }}" alt="">
                                     <div class="banner-style-3-dec">
                                         <a href="{{ url('/chitiet', $item->id) }}" style="color: aliceblue">{{ $item->tieuDe }}</a>
                                     </div>
@@ -22,7 +22,7 @@
                 </div>
                 <div class="col-md-6 col-sm-12">
                     <div class="banner-style-3-img mb-30">
-                        <img src="{{ $tinNB2->anh }}" alt="">
+                        <img src="{{ asset('image/'.$tinNB2->anh) }}" alt="">
                         <div class="banner-style-3-dec">
                             <a href="{{ url('/chitiet', $tinNB2->id) }}" style="color: aliceblue">{{ $tinNB2->tieuDe }}</a>
                         </div>
@@ -46,7 +46,7 @@
                                 <div class="col-md-3 col-sm-6 col-xs-12">
                                     <div class="single-shop">
                                         <div class="shop-img">
-                                            <a href="{{ url('/chitiet', $item->id) }}"><img src="{{ $item->anh }}"
+                                            <a href="{{ url('/chitiet', $item->id) }}"><img src="{{ asset('image/'.$item->anh) }}"
                                                     alt="" /></a>
                                         </div>
                                         <div class="shop-text-all">
@@ -110,7 +110,7 @@
                                 <div class="col-md-3 col-sm-6 col-xs-12">
                                     <div class="single-shop">
                                         <div class="shop-img">
-                                            <a href="{{ url('/chitiet', $item->id) }}"><img src="{{ $item->anh }}"
+                                            <a href="{{ url('/chitiet', $item->id) }}"><img src="{{ asset('image/'.$item->anh) }}"
                                                     alt="" /></a>
                                         </div>
                                         <div class="shop-text-all">
@@ -150,7 +150,7 @@
                     <div class="col-md-4 col-sm-6">
                         <div class="blog-details mb-30">
                             <div class="blog-img">
-                                <a href="{{ url('/chitiet', $item->id) }}"><img src="{{ $item->anh }}"
+                                <a href="{{ url('/chitiet', $item->id) }}"><img src="{{ asset('image/'.$item->anh) }}"
                                         alt=""></a>
                                 <div class="blog-quick-view">
                                     <a href="blog-details.html">
